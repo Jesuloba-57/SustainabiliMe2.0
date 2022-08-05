@@ -1,0 +1,30 @@
+/* @import ""; */
+.box p{
+    font-size: 40px;
+    font-weight:bolder;
+    text-align: center;
+}
+.box{
+    width:400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color : darkgreen;
+}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid#4caf50 ;
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    float: left;
+    margin: 0 10px;
+}

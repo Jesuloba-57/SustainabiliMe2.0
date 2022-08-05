@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class ="box">
+    <form class="search" method="post" action="">
+        <p> Find Public Transport Near You </p>
+        <div class ="textbox">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type = "text" placeholder="Enter your location" name="usersrc">
+        </div>
+        <div class ="textbox">
+            <input type = "text" placeholder="Enter your destination" name="userdest">
+            </div>
+        <br>
+        
+        <input type ="submit" value ="Find">
+        
+    </form>
+</div>
+{% endblock content %}
+

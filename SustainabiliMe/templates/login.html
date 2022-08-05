@@ -1,0 +1,30 @@
+{% extends 'layout.html' %} {% block content %}
+<div class = "bd">
+<div class = "center">
+    <form method="POST" action="">
+    <h1>Login</h1>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter email"/>
+    </div>
+    <div class="form-group">
+        <label for="password1">Password</label>
+        <input
+            type="password"
+            class="form-control"
+            id="password1"
+            name="password1"
+            placeholder="Enter password"/>
+    </div>
+    <input type ="submit" value ="Login">
+    <!-- <button type="submit" class="btn btn-outline-success">Login</button><br> -->
+    Not a member? <a href = "/sign-up">Signup</a>
+    </form>
+    </div>
+</div>
+{% endblock %}

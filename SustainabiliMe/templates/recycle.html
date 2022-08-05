@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- <div class = "pic" ><img src="/static/image/RECY.jpg" alt=""></div> -->
+<div class ="box">
+    <form class="search" method="post" action="">
+        <div class ="para"> NEED HELP RECYCLING? <br>SEARCH FOR A RECYCLING SOLUTION BELOW </div></a>
+        <div class ="textbox">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type = "text" placeholder="Enter Item" name="item">
+        </div>
+        <div class ="textbox">
+            <input type = "text" placeholder="Enter your Zip Code" name="zipcode">
+            </div>
+        <br>
+        
+        <input type ="submit" value ="Search">
+        
+    </form>
+</div>
+{% if message %}
+    <script>
+        var message = `{{message | safe}}`;
+        if(message && message != "")
+            alert(message)
+    </script>
+{% endif %}
+
+{% endblock content %}

@@ -1,0 +1,105 @@
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(98, 230, 98);
+}
+
+.site-header .container .navbar-brand  {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 28px;
+  color: white;
+  text-align: right;
+  float: right;
+  display: inline-block;
+  margin-left: 20px;
+} 
+.site-header .container .navbar-brand:hover{
+    color:darkgreen;
+}
+.site-header .container .logo{
+    max-width: 20%;
+    max-height: 50px;
+    border-radius: 50%;
+    border-color: white;
+    clip-path: circle();
+    background-color: white;
+}
+/* .navbar:after{
+  content: '';
+  clear: both;
+  display: block;
+} */
+.navbar ul{
+    list-style: none;
+    /* padding: 0; */
+    margin : 0;
+    /* text-align: right; */
+}
+.navbar ul li a{
+  text-decoration: none;
+  colorr: #fff;
+  padding: 10px 10px;
+  display: block;
+}
+.navbar ul li:hover a{
+  background: darkgreen;
+}
+.navbar ul ul{
+  position: absolute;
+  padding: 0;
+  min-width: 160px;
+  display: none;
+  /* top: 100%; */
+  left: 0;
+}
+.navbar > ul > li{
+  float: left;
+  position: relative;
+}
+
+.navbar li{
+    display: inline-block;
+    padding-left: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    text-transform:uppercase;
+    font-weight: bold;
+    font-family:arial;
+}
+
+.navbar ul li:hover > ul {
+  display: block;
+}
+.navbar ul ul li:hover a {
+  background: #6C9C38;
+}
+.navbar ul ul li{
+  position: relative; 
+}
+/* Container holding the image and the text */
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin: 40px;
+}
+.account-heading {
+  font-size: 2.5rem;
+}
+.bg-steel {
+  background-color: #6C9C38;
+}
+  
+img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}

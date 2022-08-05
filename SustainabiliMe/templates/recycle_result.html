@@ -1,0 +1,65 @@
+
+{% extends "layout.html" %}
+{% block content %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/recycle.css"/>
+
+    <style>
+        h2 {
+            width:auto;
+            height:78px;
+            background-color:#ffffff;
+            <!-- border:2px solid #ff0000b6; -->
+            margin-top: 2px;
+            padding:20px;
+            color: darkgreen;
+        }
+        th, td {
+  border:1px solid darkgreen;
+}
+
+        table{
+            background-color: #ffffff;
+            width: 80%;
+            border: 5px outset darkgreen;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+    </style>
+    <h2><center>RECYCLING CENTERS NEAR YOU<center></h2>
+    
+    {% for result in results %}
+<div class = "container">
+        <div class = "result">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th> Address</th>
+                    <th> Distance </th>
+                </tr>
+                <tr>
+                <td><p>{{ result['description'] }}</p></td>
+                <td><p>{{ result['address'] }}</p></td>
+                <td><p>{{ result['distance'] }} miles</p></td>
+                </tr>
+            </table>
+        </div>
+</div>
+    </div>{% endfor %}</div>
+
+<!-- for i in result[:10]:
+    print(i['description'])
+    print(i['distance'])
+    loc_lat = str(i['latitude'])
+    loc_long = str(i['longitude'])
+    coords = loc_lat + ", " + loc_long
+    location = geolocator.reverse(coords)
+    print(location) -->
+
+
+
+{% endblock content %}

@@ -1,0 +1,33 @@
+<!-- print("Route Info:")
+        for i in range(len(total_times)):
+            print(i, ": ", transport[i], destinations[i], total_times[i])
+        print(final_times) -->
+
+{% extends "layout.html" %}
+{% block content %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        h2 {
+            width:auto;
+            height:78px;
+            background-color:#ffffff;
+            border:2px solid #ff0000b6;
+            padding:20px;
+        }
+    </style>
+    <h2><center>{{ subtitle }}<center></h2>
+    <p>{{ text }}</p>
+
+    {% for content in contents %}
+
+        <div class=stop>
+                <p>{{ contents["destination"] }}</p>
+                <p>{{ contents["total"] }}</p>
+        </div>
+
+    </div>{% endfor %}</div>
+  
+
+<!-- contents = {"transport": transport, "destination": destinations, "total": total_times, "final": final_times} -->
+{% endblock content %}
